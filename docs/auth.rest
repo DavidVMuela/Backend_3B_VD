@@ -6,3 +6,8 @@ Content-Type: application/json
     "email": "casa@gmk.com",
     "password": "128757657"
 }
+
+
+## login sin conexión a BDD
+
+POST http://127.0.0.1:3000/auth/login
