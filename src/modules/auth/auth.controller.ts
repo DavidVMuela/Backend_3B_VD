@@ -8,7 +8,6 @@ export class AuthController {
 
     constructor(private authService: AuthService){
     }
-
     @Post('register')
     registerUser(@Body()userObj: RegisterAuthDto){
         console.log(userObj)
@@ -17,6 +16,6 @@ export class AuthController {
 
     @Post('login')
     login(@Body() credenciales: LoginAuthDto){
-        this.authService.login(credenciales)
+       return this.authService.login(credenciales)
     }
 }

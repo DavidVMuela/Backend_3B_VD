@@ -8,6 +8,18 @@ Content-Type: application/json
 }
 
 
-## login sin conexión a BDD
+### login sin conexión a BDD
 
 POST http://127.0.0.1:3000/auth/login
+Content-Type: application/json
+
+{
+    "name":"prueba2",
+    "email":"zn@mg.com",
+    "password":"12356579"
+
+}
+
+### users
+GET http://127.0.0.1:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlkIjoxLCJpYXQiOjE3MzA5NDg5NzMsImV4cCI6MTczMDk0OTAzM30.N6Zs9pqB22cX_yleC98F0fZAXqWmjgWClIeB_RMC8sg
